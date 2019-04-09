@@ -1,1 +1,244 @@
+1- Comment Your JavaScript Code:
+```
+// This is an in-line comment.
 
+    /* This is a
+    multi-line comment */
+```
+ 
+ 2- Declare JavaScript Variables:
+ ```
+ var myName;
+ ```
+3- Storing Values with the Assignment Operator:
+```
+a = 7;
+b = a;
+```
+4- Initializing Variables with the Assignment Operator:
+```
+var a = 9;
+```
+4- Understanding Uninitialized Variables:
+```
+var a = 5;
+var b = 10;
+var c = "I am a";
+```
+5- Understanding Case Sensitivity in Variables:
+```
+// Declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+```
+6- Add Two Numbers with JavaScript:
+```
+var sum = 10 + 10;
+```
+7- Subtract One Number from Another with JavaScript:
+```
+var difference = 45 - 33;
+```
+8- Multiply Two Numbers with JavaScript:
+```
+var product = 8 * 10;
+
+```
+9- Divide One Number by Another with JavaScript:
+```
+var quotient = 66 / 33;
+```
+10- Increment a Number with JavaScript:
+```
+myVar++;
+```
+11- Decrement a Number with JavaScript:
+```
+myVar--;
+```
+12- Create Decimal Numbers with JavaScript:
+```
+var myDecimal = 3.4;
+```
+13- Multiply Two Decimals with JavaScript:
+```
+var product = 2.0 * 2.5;
+```
+14- Divide One Decimal by Another with JavaScript:
+```
+var quotient = 4.4 / 2.0; // Fix this line
+```
+15- Finding a Remainder in JavaScript:
+```
+var remainder = 11 % 3;
+```
+16- Compound Assignment With Augmented Addition:
+```
+var a = 3;
+var b = 17;
+var c = 12;
+
+// Only modify code below this line
+
+a += 12;
+b += 9;
+c += 7;
+```
+17- Compound Assignment With Augmented Subtraction:
+```
+var a = 11;
+var b = 9;
+var c = 3;
+
+// Only modify code below this line
+
+a -= 6;
+b -= 15;
+c -= 1;
+```
+18- Compound Assignment With Augmented Multiplication:
+```
+var a = 5;
+var b = 12;
+var c = 4.6;
+
+// Only modify code below this line
+
+a *= 5;
+b *= 3;
+c *=  10;
+```
+19- Compound Assignment With Augmented Division:
+```
+var a = 48;
+var b = 108;
+var c = 33;
+
+// Only modify code below this line
+
+a /= 12;
+b /= 4;
+c /= 11;
+```
+20- eclare String Variables:
+```
+// Example
+var firstName = "Alan";
+var lastName = "Turing";
+
+// Only change code below this line
+
+var myFirstName = "Abdulsalam";
+var myLastName  = "Almahdi";
+```
+21- Escaping Literal Quotes in Strings:
+```
+r myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+
+```
+22- Quoting Strings with Single Quotes:
+```
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+```
+23- Escape Sequences in Strings:
+```
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; 
+```
+24- Concatenating Strings with Plus Operator:
+```
+var myStr = "This is the start. " + "This is the end.";
+```
+25- concatenating Strings with the Plus Equals Operator:
+```
+var myStr =  "This is the first sentence. ";
+
+myStr += "This is the second sentence.";
+```
+26- Constructing Strings with Variables:
+```
+var myName = "Abdulsalam";
+var myStr = "My name is " + myName + "and I am well!";
+```
+27-  Appending Variables to Strings:
+```
+var someAdjective = "learning to communicate with your mind";
+var myStr = "Learning to code is ";
+ 
+ myStr += someAdjective;
+ ```
+ 28- Find the Length of a String:
+ ```
+ var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line.
+
+lastNameLength = lastName.length;
+```
+29- use Bracket Notation to Find the First Character in a String:
+```
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+
+```
+30- Understand String Immutability:
+```
+myStr = "Hello World"; // Fix Me
+```
+31- Use Bracket Notation to Find the Nth Character in a String:
+```
+// Example
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line.
+var thirdLetterOfLastName = lastName[2];
+
+```
+32- Use Bracket Notation to Find the Last Character in a String:
+```
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line.
+var lastLetterOfLastName = lastName[lastName.length - 1];
+```
+33- Use Bracket Notation to Find the Nth-to-Last Character in a String:
+```
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+```
+34- Word Blanks:
+```
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  // Your code below this line
+  
+
+  var result =  "";
+
+  result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
+
+
+  // Your code above this line
+  return result;
+}
+```
+35- 
