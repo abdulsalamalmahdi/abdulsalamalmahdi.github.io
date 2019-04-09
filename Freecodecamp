@@ -408,4 +408,150 @@ function processArg(num) {
  ```
  53- Stand in Line:
  ```
+ ```
  
+ 54- Understanding Boolean Values:
+ ```
+ function welcomeToBooleans() {
+
+// Only change code below this line.
+
+return true; // Change this line
+
+// Only change code above this line.
+}
+```
+55-  Use Conditional Logic with If Statements:
+```
+function trueOrFalse(wasThatTrue) {
+
+  // Only change code below this line.
+  if (wasThatTrue){
+      return "Yes, that was true";
+  }
+  
+  return "No, that was false";
+  // Only change code above this line.
+  
+}
+
+// Change this value to test
+trueOrFalse(true);
+```
+ 56- Comparison with the Equality Operator:
+ ```
+ function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testEqual(12);
+```
+57- Comparison with the Strict Equality Operator:
+```
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testStrict(10);
+```
+58- Practice comparing different values:
+```
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+compareEquality(10, "10");
+```
+59- omparison with the Inequality Operator:
+```
+nction testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testNotEqual(10);
+```
+60- omparison with the Strict Inequality Operator:
+```
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val !== 17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testStrictNotEqual(10);
+```
+61- Comparison with the Greater Than Operator:
+```
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+// Change this value to test
+testGreaterThan(10);
+```
+62- Comparison with the Greater Than Or Equal To Operator:
+```
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+  
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+// Change this value to test
+testGreaterOrEqual(10);
+```
+63- Comparison with the Less Than Operator:
+```
+unction testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+  
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+// Change this value to test
+testLessThan(10);
+```
+
