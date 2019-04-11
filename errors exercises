@@ -25,20 +25,23 @@ declare variable name after var
 broken code:
 ```js
 let a = {b:3};
-let b = a.b.3
+let b = a.b.3;
 ```
 error message:
 ```
+SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase.
+* syntax.
 
 the fix:
 ```js
+let a = {b:3};
+let b = a.b;
 ```
 your notes:
-
+access the value only by its prop name.
 [TOP](#errors)
 
 ## access property directly
@@ -49,16 +52,19 @@ let y = b.e;
 ```
 error message:
 ```
+ReferenceError: b is not defined 
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase.
+* syntax.
 
 the fix:
 ```js
+let x = {b:'e'};
+let y = x.b;
 ```
 your notes:
-
+use object.prop to acess its value
 [TOP](#errors)
 
 ---
@@ -70,16 +76,18 @@ two lines';
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL.
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase.
+* syntax.
 
 the fix:
 ```js
+let a = 'this is two lines';
 ```
 your notes:
-
+strings can not be broken.
 [TOP](#errors)
 
 ---
@@ -90,16 +98,18 @@ let a = 1:
 ```
 error message:
 ```
+SyntaxError: Unexpected token :
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax.
 
 the fix:
 ```js
+let a = 1;
 ```
 your notes:
-
+always close statments with a semicolon.
 [TOP](#errors)
 
 ---
@@ -110,16 +120,18 @@ let myArray = [1, 2, 3;
 ```
 error message:
 ```
+SyntaxError: Unexpected token ;
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase.
+* syntax.
 
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
 your notes:
-
+an array should be enclosed inside two square prackets.
 [TOP](#errors)
 
 ---
