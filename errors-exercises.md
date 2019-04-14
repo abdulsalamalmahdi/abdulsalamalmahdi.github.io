@@ -2,7 +2,7 @@
 ### missing variable name
 broken code:
 ```js
-var = 5;
+var a = 5;
 ```
 error message:
 ```js
