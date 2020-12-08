@@ -1,9 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueTilt from "vue-tilt.js";
+import VanillaTilt from "vanilla-tilt";
+import './assets/styles/app.css'
 
 Vue.use(VueTilt);
 Vue.config.productionTip = false
+Vue.directive('tilting', function (el, binding) {
+  console.log(binding)
+  console.log(document.querySelectorAll('.tilts'))
+  VanillaTilt.init(el, Object.assign({},binding.value));
+    
+  }
+);
 Vue.directive("ease", {
   inViewport(el) {
     var rect = el.getBoundingClientRect();

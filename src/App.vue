@@ -1,26 +1,32 @@
 <template>
   <div id="app">
-    <tilts v-for="el in arr" :key="el.id" class="titls"/>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <tilts
+   v-for="el in arr" :key="el.id"
+    /> -->
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Mypic/>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import Tilts from './components/Tilts'
+import HelloWorld from './components/HelloWorld.vue'
+import Mypic from './components/Mypic'
+
+//import Tilts from './components/Tilts'
 export default {
   name: 'App',
   data:()=>({
 arr:[{id:1},{id:2},{id:3}]
   }),
   components: {
-   //HelloWorld,
-    Tilts,
+   HelloWorld,
+    //Tilts,
+    Mypic,
   }
 }
 </script>
 
-<style>
+<style lang='scss'>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +36,8 @@ arr:[{id:1},{id:2},{id:3}]
   margin-top: 60px;
   width: 100vw;
   height: 100vh;
+  background-color: #2c3e50;
 }
+
 
 </style>
