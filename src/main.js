@@ -1,8 +1,10 @@
 import Vue from 'vue'
+import router from "./router";
 import App from './App.vue'
 import VueTilt from "vue-tilt.js";
 import VanillaTilt from "vanilla-tilt";
-import './assets/styles/app.css'
+import './assets/styles/app.css';
+
 
 Vue.use(VueTilt);
 Vue.config.productionTip = false
@@ -48,5 +50,6 @@ Vue.directive("ease", {
 });
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount("#app");

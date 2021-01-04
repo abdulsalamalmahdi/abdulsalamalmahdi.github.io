@@ -1,6 +1,7 @@
 <template>
   <div class="flex-container">
-    <div 
+    <div  
+    ref="con"
       v-tilt="{
         reverse: true,
         max: 15,
@@ -21,8 +22,12 @@
       class="flex-item bg-one tilt"
     >
       <a href="#nothing">
-           <span>3D Card</span>
-      <p>this is a new paragraph</p>
+           <span >3D Card</span>
+           <div class="green">
+           </div>
+           
+      <p ref="par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ipsam sequi, necessitatibus exercitationem voluptates quasi dolorum, corrupti rerum alias autem atque! A assumenda facilis similique, in adipisci excepturi blanditiis minima.</p>
+       <Mypic v-if="this.$route.path !== '/face'" :pic="pic"/>
        </a>
     </div>
    
@@ -30,16 +35,38 @@
 </template>
 
 <script>
-export default {};
+import Mypic from "./Mypic"
+import {gsap, Linear} from 'gsap';
+export default {
+  name:"Tilts",
+  data:()=>({
+   
+    pic:false,
+  }),
+mounted:function(){
+  const con = this.$refs.con; 
+  const p = this.$refs.par;
+ 
+  gsap.timeline().fromTo(p,1,{x:-100, ease: Linear.easeNone},{x:0, opacity:1});
+  
+},
+methods:{
+
+},
+components:{
+  Mypic,
+}
+};
 </script>
 
 <style lang="scss" scoped>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 .flex-container {
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -53,8 +80,8 @@ export default {};
     border-radius: 2px;
     padding: 4.5em 5em;
     position: relative;
-    width:600px;
-    height: 600px;
+    width:500px;
+    height: 500px;
     
     a {
       position: absolute;
@@ -70,7 +97,7 @@ export default {};
       align-items: center;
       text-decoration: none;
       text-align: center;
-      color: #fff;
+      color: rgb(36, 31, 78);
       font-size: 24px;
       font-weight: normal;
       line-height: 1.5;
@@ -98,8 +125,12 @@ export default {};
 }
 
 .bg-one {
-
-  background: linear-gradient(45deg, rgb(255, 25, 75), rgb(130, 21, 240));
+background: linear-gradient(45deg, transparent 0 1%, rgb(255, 25, 75,), transparent 0 10%, rgb(130, 21, 240,));;
+ // background: linear-gradient(45deg, rgb(255, 25, 75), rgb(130, 21, 240));
 }
+p{
+  opacity: 0;
+}
+
 
 </style>
