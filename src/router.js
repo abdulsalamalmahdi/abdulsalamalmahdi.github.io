@@ -16,6 +16,11 @@ export default new Router({
       component: Home,
     },
     {
+      path: "/",
+      name: "home",
+      component: Home,
+    },
+    {
       path: "/projects",
       name: "projects",
       component: Tilts,
