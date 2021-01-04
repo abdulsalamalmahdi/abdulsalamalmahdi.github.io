@@ -1,6 +1,6 @@
 
 module.exports = {
- 
+ publicPath:"/src/App.vue",
   // "devServer": {
   //   "https": false
   // },
