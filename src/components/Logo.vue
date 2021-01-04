@@ -1,7 +1,6 @@
 <template>
   <div class="canvas-container">
-    <canvas id="canvas1"></canvas>
-    <svg
+     <svg
       ref="top"
       class="hex"
       id="Layer_1"
@@ -80,7 +79,7 @@
         />
       </g>
     </svg>
-    
+    <canvas id="canvas1"></canvas>
   </div>
 </template>
 
