@@ -1,5 +1,8 @@
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/https://abdulsalamalmahdi.github.io/'
+    : '/',
   // "devServer": {
   //   "https": false
   // },
