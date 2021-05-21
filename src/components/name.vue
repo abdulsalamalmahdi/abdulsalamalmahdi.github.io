@@ -226,8 +226,8 @@ function onMouseMove(e){
 
   // if ((((e.clientX - ww) <(-700) )||((e.clientX - ww) >(-1500))) && (((e.clientY - wh) > -450 )||((e.clientY - wh) < -300 ))){
     
-     mouse.x = e.clientX +10;
-  mouse.y = e.clientY - 150;
+     mouse.x = e.clientX ;
+  mouse.y = e.clientY ;
  // }
  
 }
@@ -247,7 +247,7 @@ body{
 }
 canvas{
     
-    background: black;
+    /* background: black; */
     width: 90vw;
     height: 60vh;
     margin: 0;

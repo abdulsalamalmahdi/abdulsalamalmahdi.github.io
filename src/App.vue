@@ -1,9 +1,11 @@
 <template>
   <div id="app">
+     <Logo/>
    <div class="nav">
     <header>
         <div class="logo">
-            <img src="./assets/img/apex-logo.png" alt="Apex Legends">
+            
+         
         </div>
         <nav>
             <a class="menu-link" href="#name"><span>HOME</span></a>
@@ -19,17 +21,25 @@
   </div>
   <Name/>
   <Card/>
+  <!-- <Face/> -->
+
   </div>
 </template>
 
 <script>
+import Logo from './components/logo'
+
 import Name from './components/name';
-import Card from './components/card'
+import Card from './components/card';
+//import Face from './components/Face';
 export default {
   name: 'App',
   components: {
    Name,
    Card,
+  //  Face,
+  Logo,
+  
   }
 }
 </script>
